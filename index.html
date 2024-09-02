@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTIZBLOCK</title>
+    <link rel="icon" type="image/x-icon" href="/img/menu_book_FILL0_wght400_GRAD0_opsz24.svg">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+    
+</head>
+<body onload="render(); ">
+    
+    <div>
+
+      <header>
+        <a href=""><img class="img1" src="proile.jpg"/> </a>
+      
+          <nav class="navigation-menu">
+            <ul>
+            
+            
+  
+             <li><a class="contact" href="index.html">HOME</a></li>
+            <li><img src="notebook_3795965.png" alt=""></li>
+            <li>NOTIZEN</li>
+            </ul>
+          </nav>
+  
+      
+          
+      </header>
+  </div>   
+
+    <div class="container">
+
+    <div class="notebook" >
+      <a onclick="enterNote()"   href="#">
+        <img src="notesbook.png" alt="" >
+        <p class="img-name">Notiz schreiben</p>
+      </a>
+    </div>
+
+    <div id="waste" class="basket d-none">  
+      <div class="wasteBin">
+        <div class="bin">
+          <span>Recycle Bin</span>
+          <button  onclick="closetrash()">X</button>
+        </div>
+        <div id="waste-Basket"></div>
+      </div>
+    </div> 
+    
+      
+        <a href="#"><img src="delete_FILL0_wght400_GRAD0_opsz24.svg " onclick="opentrash()"></a>
+      </div>
+
+    </div>
+
+
+
+
+    <div id="notes" class="f-none">
+     <form>
+    <div class="noteArea" > <div id ="inputs">
+    
+            <label>
+        <input id="name" type="text" placeholder="Title" required/> 
+            </label>
+            
+        <textarea id="telefon" type="text" placeholder="Message" required ></textarea >
+
+    
+        <img src=" note_add_FILL0_wght400_GRAD0_opsz24.svg "  alt="" onclick="addnote()">
+          <br> </div> 
+        </div>
+       
+        
+            
+    </form>
+    </div>
+    
+      
+
+    
+          
+       
+
+
+    <div id="content"> </div>
+    <div id="trash-content"></div>
+    
+    
+            
+   
+
+    
+    <script src="script.js"></script>
+      
+    
+</body>
+</html>
